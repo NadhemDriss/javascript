@@ -1,0 +1,53 @@
+<html>
+    
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+     
+        <meta name="description" content="An interactive getting started guide for Brackets.">
+        
+    </head>
+    <body>
+        <h1>le bom</h1>
+          <button id='ouvrir'>Ouvrir</button>
+          <button id='fermer'>Fermer</button>
+        
+        <script>
+        /*p1= document.querySelector('p');
+        p1.addEventListener('click',openFenetre);
+           
+           function openFenetre(){
+           window.open('https://jsbin.com/gajozelexu/edit?html,output','_blank','width=900, height=500');
+               
+               
+           }
+        */
+            var ouvrir = document.getElementById('ouvrir');
+            var fermer = document.getElementById('fermer');
+            var fenetre = '';
+            
+            
+             ouvrir.addEventListener('click',ouvrirfenetre);
+             fermer.addEventListener('click',fermerfenetre);
+              
+           function ouvrirfenetre(){
+           fenetre=window.open('https://jsbin.com/gajozelexu/edithtml,output','_blank','toolbar=yes,scrollbars=yes,resizable=yes,top=500,left=500,width=400,height=400');
+               
+               
+           }
+            
+            function fermerfenetre(){
+                fenetre.close();
+                
+                
+            }
+            
+            
+            
+        
+        </script>
+    
+    
+    
+    </body>
+</html>

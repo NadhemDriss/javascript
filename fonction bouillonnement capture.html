@@ -1,0 +1,44 @@
+<html>
+    
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title>PREMIERS cours avec javascript</title>
+        
+        <meta name="description" content="An interactive getting started guide for Brackets.">
+        <link rel="stylesheet" href="testcss.css">
+    </head>
+    <body>
+        
+        
+        <div id='div1'>
+            <p id='p1'> Phase de <strong>bouillonnement</strong></p>
+        </div>  
+        
+        
+        
+        <script>
+            var body= document.body;
+            var div1= document.getElementById('div1');
+            var p1= document.getElementById('p1');
+            var strong= document.querySelector('strong');
+            
+        
+            //Phase de capture
+            strong.addEventListener('click',cs,true);
+            function cs(){alert('capture strong');};
+            
+            //phase bouillonnement
+            
+            p1.addEventListener('click',cp1);
+            div1.addEventListener('click',bd);
+            body.addEventListener('click',bb);
+            
+            function cp1(){alert('element p');};
+            function bd() { alert('element div');};
+            function bb() { alert ('element body');};
+            
+        
+        </script>
+    </body>
+</html>

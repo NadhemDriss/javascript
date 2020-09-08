@@ -1,0 +1,46 @@
+<html>
+    
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title>PREMIERS cours avec javascript</title>
+        
+        <meta name="description" content="An interactive getting started guide for Brackets.">
+        <link rel="stylesheet" href="testcss.css">
+    </head>
+    <body>
+        
+<h1> le modéle des boite</h1>
+<div class="div1">
+<p class="p1"> <span class="aa">ceci et un</span></p>
+<p class="p2"> ceci et deux</p>
+<script>
+var  exemple = {
+    
+     nom:" nadhem",
+     prenom:"driss",
+     age:27,
+    
+    identite:function(){
+        
+        return 'le nom est ' +this.nom.toLocaleUpperCase()+' le prénom est ' +this.prenom+ ' son age est ' +this.age;
+        
+    }
+    
+   
+    
+}    
+    alert(exemple.identite());
+    
+    
+    for (var iter = 0; iter < 5; iter++) {
+    alert('Itération n°' + iter);
+    
+}
+    
+</script>
+
+
+</div>
+    </body>
+    

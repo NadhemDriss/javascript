@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+<head>
+   <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width">
+
+  <title>JS Bin</title>
+</head>
+<body>
+    
+    <p class="lien1"> ceci un lien<a href="https://www.google.com/"> ici</a></p>
+    <p class="lien1"> ceci un deuxieme lien<a href="https://www.facebook.com/"> ici</a></p>
+    <script>
+      /*  var lien2= document.querySelector('.lien1');
+        alert (lien2);
+      document.querySelector('a').href= lien2;*/
+        var n = document.createElement('p');
+        n.id='nv';
+        var texte=document.createTextNode('nouveelle ligne\n');
+       n.appendChild(texte);
+         var text2=document.createTextNode('salut une autre fois');
+        n.appendChild(text2);
+        
+        var para1=document.querySelector('.lien1');
+        
+        
+        document.body.insertBefore(n,para1);
+        
+        
+    </script>
+</body>
+</html>

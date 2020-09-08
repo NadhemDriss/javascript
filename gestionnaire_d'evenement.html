@@ -1,0 +1,50 @@
+<html>
+    
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+     
+        <meta name="description" content="An interactive getting started guide for Brackets.">
+        
+    </head>
+    <body>
+        <h1>gestionnaire d'evenement</h1>
+        <div class='div'>
+        
+        <p>paragraphe 1 </p>
+        <p>paragraphe 2  </p>
+        
+        </div>
+        
+        
+        
+        
+        
+        <script>
+        var p1=document.querySelector('p');
+        var div1=document.querySelector('div');
+        
+        p1.addEventListener('click',changerP);    
+            div1.addEventListener('click',changerDiv);
+            
+            
+            function changerP(){
+                 this.innerHTML='<strong>hello</strong>';
+               this.style.color='red';
+                
+                
+            }
+            
+            function changerDiv(){
+                
+                 this.innerHTML='<strong>hello</strong>';
+               this.style.color='red';
+                
+                
+            }
+        </script>
+        
+        
+        
+    </body>
+</html>
